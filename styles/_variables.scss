@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&display=swap");
 
 // Layout
 
@@ -13,9 +13,9 @@
 
 $Soft-red: hsl(7, 99%, 70%);
 $Yellow: hsl(51, 100%, 49%);
-$Dark-desaturated-cyan : hsl(167, 40%, 24%);
-$Dark-blue : hsl(198, 62%, 26%);
-$Dark-moderate-cyan : hsl(168, 34%, 41%);
+$Dark-desaturated-cyan: hsl(167, 40%, 24%);
+$Dark-blue: hsl(198, 62%, 26%);
+$Dark-moderate-cyan: hsl(168, 34%, 41%);
 
 // ### Neutral
 
@@ -31,12 +31,19 @@ $White: hsl(0, 0%, 100%);
 
 $Font-size: 112.5%;
 
-$ff-pri: 'Barlow', sans-serif;
-$ff-sec: 'Fraunces', serif;
+$fs-xxs: 0.4275rem;
+$fs-xs: 0.5345rem;
+$fs-s: 0.6925rem;
+$fs-m: 0.825rem;
+$fs-l: 1.35rem;
+$fs-xl: 1.75rem;
+$fs-xxl: 2.5rem;
+$fs-xxxl: 3.25rem;
+
+$ff-pri: "Barlow", sans-serif;
+$ff-sec: "Fraunces", serif;
 
 $fw-main: 400;
 $fw-pri-bold: 600;
 $fw-sec-bold: 700;
 $fw-sec-dark: 900;
-
-
