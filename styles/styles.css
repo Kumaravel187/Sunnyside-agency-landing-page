@@ -81,7 +81,7 @@ select {
   top: 2rem;
   left: 2rem;
 }
-.navigation__nav-links {
+.navigation__nav-links.open {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -97,6 +97,12 @@ select {
   -webkit-clip-path: polygon(0% 8%, 93% 8%, 100% 0.5%, 100% 100%, 0% 100%, 0% 50%);
           clip-path: polygon(0% 8%, 93% 8%, 100% 0.5%, 100% 100%, 0% 100%, 0% 50%);
   padding: 3rem 0;
+}
+.navigation__nav-links.close {
+  display: none;
+}
+.navigation__nav-links {
+  z-index: 100;
 }
 .navigation__nav-links--link {
   text-decoration: none;
@@ -124,7 +130,7 @@ select {
   line-height: normal;
   font-family: "Fraunces", serif;
   font-weight: 900;
-  font-size: 2.5rem;
+  font-size: 1.75rem;
   color: hsl(0, 0%, 100%);
   text-transform: uppercase;
   letter-spacing: 0.5rem;
@@ -181,7 +187,7 @@ select {
   display: none;
 }
 .section-grid__description {
-  padding: 3.5rem 4rem;
+  padding: 3.5rem 2rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -217,11 +223,11 @@ select {
   left: 50%;
   transform: translateX(-50%);
 }
-.section-grid__figure .abs:nth-child(2) {
-  top: 72%;
-}
 .section-grid__figure .abs:nth-child(2).green {
+  top: 72%;
   color: hsl(167, 40%, 24%);
+  width: 15rem;
+  text-transform: capitalize;
 }
 .section-grid__figure .abs:nth-child(3).green {
   top: 80%;
@@ -229,6 +235,7 @@ select {
   color: hsl(167, 40%, 24%);
 }
 .section-grid__figure .abs:nth-child(2).blue {
+  top: 72%;
   color: hsl(198, 62%, 26%);
 }
 .section-grid__figure .abs:nth-child(3).blue {
@@ -260,21 +267,21 @@ select {
 }
 .section-client {
   text-align: center;
-  padding: 4rem 5rem;
+  padding: 3rem 2.5rem;
 }
 .section-client__header {
   font-family: "Fraunces", serif;
   color: hsl(210, 4%, 67%);
-  font-size: 0.825rem;
+  font-size: 0.6925rem;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.25rem;
-  margin-bottom: 3rem;
+  margin-bottom: 0.25rem;
 }
 .section-client__testimonial {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 1rem;
 }
 .section-client__testimonial .article {
   display: flex;

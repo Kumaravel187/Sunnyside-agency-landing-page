@@ -14,7 +14,7 @@
     left: 2rem;
   }
 
-  &__nav-links {
+  &__nav-links.open {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -29,7 +29,14 @@
     z-index: 1;
     clip-path: polygon(0% 8%, 93% 8%, 100% 0.5%, 100% 100%, 0% 100%, 0% 50%);
     padding: 3rem 0;
+  }
 
+  &__nav-links.close {
+    display: none;
+  }
+
+  &__nav-links {
+    z-index: 100;
     &--link {
       text-decoration: none;
       color: $Very-dark-grayish-blue;
@@ -59,7 +66,7 @@
     line-height: normal;
     font-family: $ff-sec;
     font-weight: 900;
-    font-size: $fs-xxl;
+    font-size: $fs-xl;
     color: $White;
     text-transform: uppercase;
     letter-spacing: 0.5rem;
