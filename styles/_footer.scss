@@ -1,0 +1,44 @@
+.footer {
+  background-color: lighten($color: $Dark-moderate-cyan, $amount: 15%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2.5rem 1.25rem;
+
+  &__links {
+    font-size: $fs-s;
+    text-transform: capitalize;
+
+    &--link {
+      color: $Dark-desaturated-cyan;
+      text-decoration: none;
+      margin-left: 4rem;
+      transition: all 300ms ease-in-out;
+
+      &:first-of-type {
+        margin-left: 0;
+      }
+
+      &:hover {
+        font-weight: $fw-pri-bold;
+      }
+    }
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      margin-left: 2rem;
+      width: 0.8rem;
+      cursor: pointer;
+
+      &:first-of-type {
+        margin-left: 0;
+      }
+    }
+  }
+}
