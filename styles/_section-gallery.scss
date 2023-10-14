@@ -1,0 +1,10 @@
+.section-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 48rem) {
+  .section-gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
