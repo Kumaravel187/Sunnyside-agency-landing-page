@@ -1,0 +1,87 @@
+.section-client {
+  text-align: center;
+  padding: 4rem 5rem;
+
+  &__header {
+    font-family: $ff-sec;
+    color: $Grayish-blue;
+    font-size: $fs-m;
+    font-weight: $fw-sec-dark;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    margin-bottom: 3rem;
+  }
+
+  &__testimonial {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    .article {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 2rem 0;
+      //   border: 1px solid red;
+      &__img {
+        border-radius: 50%;
+        width: 5rem;
+      }
+
+      &__description {
+        font-size: $fs-m;
+        color: $Very-dark-desaturated-blue;
+        font-weight: $fw-pri-bold;
+      }
+
+      &__name {
+        font-family: $ff-sec;
+        font-size: $fs-l;
+
+        font-weight: $fw-sec-dark;
+        .occupation {
+          display: block;
+          font-family: $ff-pri;
+          font-size: $fs-s;
+          color: $Grayish-blue;
+          margin-top: 0.25rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 48rem) {
+  .section-client {
+    &__header {
+      margin-bottom: 1rem;
+    }
+    &__testimonial {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3rem;
+
+      .article {
+        gap: 2rem;
+        &__img {
+          border-radius: 50%;
+          width: 4rem;
+        }
+
+        &__description {
+          font-size: $fs-xs;
+        }
+
+        &__name {
+          font-size: $fs-m;
+          .occupation {
+            font-size: $fs-xs;
+
+            margin-top: 0.25rem;
+          }
+        }
+      }
+    }
+  }
+}

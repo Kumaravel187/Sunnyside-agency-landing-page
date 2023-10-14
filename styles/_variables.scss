@@ -27,7 +27,8 @@ $White: hsl(0, 0%, 100%);
 
 // ## Typography
 
-// ### Body Copy
+$ff-pri: "Barlow", sans-serif;
+$ff-sec: "Fraunces", serif;
 
 $Font-size: 112.5%;
 
@@ -40,8 +41,6 @@ $fs-xl: 1.75rem;
 $fs-xxl: 2.5rem;
 $fs-xxxl: 3.25rem;
 
-$ff-pri: "Barlow", sans-serif;
-$ff-sec: "Fraunces", serif;
 
 $fw-main: 400;
 $fw-pri-bold: 600;
