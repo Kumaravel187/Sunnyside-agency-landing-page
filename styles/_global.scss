@@ -67,6 +67,8 @@ select {
   grid-template-rows: auto 1fr auto;
 }
 
-// @media (min-width: 50rem) {
-
-// }
+@media (min-width: 48rem) {
+  html {
+    font-size: 150%;
+  }
+}

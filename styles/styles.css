@@ -69,6 +69,11 @@ select {
   grid-template-rows: auto 1fr auto;
 }
 
+@media (min-width: 48rem) {
+  html {
+    font-size: 150%;
+  }
+}
 .navigation {
   text-align: center;
   position: relative;
