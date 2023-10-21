@@ -57,6 +57,7 @@
   .section-client {
     &__header {
       margin-bottom: 1rem;
+      font-size: $fs-l;
     }
     &__testimonial {
       grid-template-columns: repeat(3, 1fr);
@@ -66,17 +67,17 @@
         gap: 2rem;
         &__img {
           border-radius: 50%;
-          width: 4rem;
+          width: 6rem;
         }
 
         &__description {
-          font-size: $fs-xs;
+          font-size: $fs-standard;
         }
 
         &__name {
           font-size: $fs-m;
           .occupation {
-            font-size: $fs-xs;
+            font-size: $fs-m;
 
             margin-top: 0.25rem;
           }

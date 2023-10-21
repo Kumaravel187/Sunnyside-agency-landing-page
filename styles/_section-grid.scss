@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1fr;
   text-align: center;
+  place-items: center;
 
   &__img.desktop {
     display: none;
@@ -61,13 +62,13 @@
       &:nth-child(4).green {
         top: 80%;
         color: $Dark-desaturated-cyan;
-        width: 15rem;
+        width: 20rem;
         text-transform: capitalize;
       }
 
       &:nth-child(3).green {
         top: 70%;
-        width: 15rem;
+        width: 20rem;
         color: $Dark-desaturated-cyan;
       }
 
@@ -100,7 +101,8 @@
     &__figure {
       .abs {
         &:nth-child(4).green {
-          top: 72%;
+          top: 74%;
+          width: 22rem;
         }
 
         &:nth-child(3).green {
@@ -108,7 +110,8 @@
         }
 
         &:nth-child(4).blue {
-          top: 72%;
+          top: 74%;
+          width: 22rem;
         }
 
         &:nth-child(3).blue {
@@ -140,39 +143,23 @@
     .grid-item.six {
       order: 6;
     }
-    // &:nth-of-type(1) //yellow
-    // {
-    //   order: 1;
-    // }
-
-    // &:nth-of-type(2) //yellow
-    // {
-    //   order: 1;
-    // }
-
-    // &:nth-of-type(2) //yellow
-    // {
-    //   order: 2;
-    // }
-
-    // &:nth-of-type(4) //yellow
-    // {
-    //   order: 3;
-    // }
-
-    // &:nth-of-type(5) //yellow
-    // {
-    //   order: 6;
-    // }
-
-    // &:nth-of-type(6) //yellow
-    // {
-    //   order: 1;
-    // }
 
     &__description {
       justify-content: center;
       align-items: center;
+      padding: 0 4rem;
+
+      &--heading {
+        font-size: $fs-xxl;
+      }
+
+      &--para {
+        font-size: $fs-standard;
+      }
+
+      &--link {
+        font-size: $fs-xl;
+      }
     }
   }
 }

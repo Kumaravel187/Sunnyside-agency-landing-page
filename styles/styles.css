@@ -69,11 +69,6 @@ select {
   grid-template-rows: auto 1fr auto;
 }
 
-@media (min-width: 48rem) {
-  html {
-    font-size: 150%;
-  }
-}
 .navigation {
   text-align: center;
   position: relative;
@@ -172,7 +167,7 @@ select {
   .navigation__desktop--link {
     margin-left: 2rem;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.35rem;
     color: hsl(0, 0%, 100%);
     padding: 0.5rem 0.85rem;
     transition: all 300ms ease-in-out;
@@ -183,11 +178,15 @@ select {
     color: hsl(212, 27%, 19%);
     border-radius: 2rem;
   }
+  .navigation__heading {
+    font-size: 2.5rem;
+  }
 }
 .section-grid {
   display: grid;
   grid-template-columns: 1fr;
   text-align: center;
+  place-items: center;
 }
 .section-grid__img.desktop {
   display: none;
@@ -232,12 +231,12 @@ select {
 .section-grid__figure .abs:nth-child(4).green {
   top: 80%;
   color: #25564b;
-  width: 15rem;
+  width: 20rem;
   text-transform: capitalize;
 }
 .section-grid__figure .abs:nth-child(3).green {
   top: 70%;
-  width: 15rem;
+  width: 20rem;
   color: #25564b;
 }
 .section-grid__figure .abs:nth-child(4).blue {
@@ -261,13 +260,15 @@ select {
     display: block;
   }
   .section-grid__figure .abs:nth-child(4).green {
-    top: 72%;
+    top: 74%;
+    width: 22rem;
   }
   .section-grid__figure .abs:nth-child(3).green {
     top: 60%;
   }
   .section-grid__figure .abs:nth-child(4).blue {
-    top: 72%;
+    top: 74%;
+    width: 22rem;
   }
   .section-grid__figure .abs:nth-child(3).blue {
     top: 60%;
@@ -293,6 +294,16 @@ select {
   .section-grid__description {
     justify-content: center;
     align-items: center;
+    padding: 0 4rem;
+  }
+  .section-grid__description--heading {
+    font-size: 2.5rem;
+  }
+  .section-grid__description--para {
+    font-size: 1rem;
+  }
+  .section-grid__description--link {
+    font-size: 1.75rem;
   }
 }
 .section-client {
@@ -346,6 +357,7 @@ select {
 @media (min-width: 48rem) {
   .section-client__header {
     margin-bottom: 1rem;
+    font-size: 1.35rem;
   }
   .section-client__testimonial {
     grid-template-columns: repeat(3, 1fr);
@@ -356,16 +368,16 @@ select {
   }
   .section-client__testimonial .article__img {
     border-radius: 50%;
-    width: 4rem;
+    width: 6rem;
   }
   .section-client__testimonial .article__description {
-    font-size: 0.5345rem;
+    font-size: 1rem;
   }
   .section-client__testimonial .article__name {
     font-size: 0.825rem;
   }
   .section-client__testimonial .article__name .occupation {
-    font-size: 0.5345rem;
+    font-size: 0.825rem;
     margin-top: 0.25rem;
   }
 }
@@ -415,4 +427,13 @@ select {
 }
 .footer__socials img:first-of-type {
   margin-left: 0;
+}
+
+@media (min-width: 48rem) {
+  .footer__links {
+    font-size: 1rem;
+  }
+  .footer__socials img {
+    width: 1.5rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
