@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://glittery-swan-1a3e02.netlify.app/)
+- Live Site URL: [Live Site Link](https://glittery-swan-1a3e02.netlify.app/)
 
 ## My process
 
